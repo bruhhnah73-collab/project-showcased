@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Projects | Project Showcase</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            MY PROJECTS
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+
+            <p class="eyebrow">
+                PROJECT SHOWCASE
+            </p>
+
+            <h1>
+                Things I've <span>Built.</span>
+            </h1>
+
+            <p class="hero-text">
+                A collection of hardware and electronics projects I've designed,
+                programmed, and built.
+            </p>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+
+
+            <!-- =========================
+                 LASER SECURITY SYSTEM
+                 PORTRAIT VIDEO
+            ========================== -->
+
+            <article class="project-card">
+
+                <div class="video-container laser-video">
+
+                    <video controls preload="metadata">
+                        <source src="laser-security-system.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Laser Security System
+                    </h2>
+
+                    <p class="project-description">
+                        A simple intrusion-detection system that uses a laser,
+                        LDR, and alarm circuit to detect when the laser beam
+                        is interrupted.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Laser</span>
+                        <span>LDR</span>
+                        <span>Transistor</span>
+                        <span>Buzzer</span>
+
+                    </div>
+
+
+                    <details>
+
+                        <summary>
+                            How it works
+                        </summary>
+
+                        <div class="explanation">
+
+                            <p>
+                                The system uses a laser beam and an LDR to detect
+                                when the beam is interrupted.
+                            </p>
+
+                            <p>
+                                Under normal conditions, the laser continuously
+                                shines onto the LDR. When the laser reaches the
+                                LDR, the circuit remains in its normal state and
+                                the alarm stays OFF.
+                            </p>
+
+                            <p>
+                                If someone crosses the laser's path, the beam is
+                                interrupted and the amount of light reaching the
+                                LDR changes. This change triggers the switching
+                                circuit and activates the buzzer or alarm.
+                            </p>
+
+                            <p>
+                                This type of system can be used as a simple
+                                intrusion-detection setup, such as for
+                                <strong>door or window security</strong>.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 AUTOMATIC STREETLIGHT
+                 LANDSCAPE VIDEO
+            ========================== -->
+
+            <article class="project-card">
+
+                <div class="video-container">
+
+                    <video controls preload="metadata">
+                        <source src="automatic-streetlight-sensor.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <h2>
+                        Automatic Streetlight Sensor
+                    </h2>
+
+                    <p class="project-description">
+                        An automatic lighting system that detects surrounding
+                        light and switches an LED on when the environment
+                        becomes dark.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>LDR</span>
+                        <span>Transistor</span>
+                        <span>LED</span>
+                        <span>Sensor</span>
+
+                    </div>
+
+
+                    <details>
+
+                        <summary>
+                            How it works
+                        </summary>
+
+                        <div class="explanation">
+
+                            <p>
+                                The circuit uses an
+                                <strong>LDR (Light Dependent Resistor)</strong>
+                                to detect the amount of light around it.
+                            </p>
+
+                            <p>
+                                The resistance of the LDR changes depending on
+                                the light level. In bright conditions its
+                                resistance is low, while in darkness its
+                                resistance increases.
+                            </p>
+
+                            <p>
+                                This change controls a transistor, which acts
+                                as an electronic switch. When there is enough
+                                light, the transistor keeps the LED switched
+                                off. When the surrounding light becomes low,
+                                the transistor switches on and allows current
+                                to flow through the LED.
+                            </p>
+
+                            <p>
+                                This allows the streetlight to automatically
+                                turn on when it gets dark and turn off when
+                                there is enough light.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 SOIL MOISTURE SENSOR
+                 LANDSCAPE VIDEO
+            ========================== -->
+
+            <article class="project-card">
+
+                <div class="video-container">
+
+                    <video controls preload="metadata">
+                        <source src="soil-moisture-sensor.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Soil Moisture Sensor
+                    </h2>
+
+                    <p class="project-description">
+                        A sensor-based project that detects moisture levels
+                        in soil and processes the readings using a programmed
+                        microcontroller.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Soil Sensor</span>
+                        <span>Sajilo Bot</span>
+                        <span>Arduino-based</span>
+                        <span>Code</span>
+
+                    </div>
+
+
+                    <details>
+
+                        <summary>
+                            How it works
+                        </summary>
+
+                        <div class="explanation">
+
+                            <p>
+                                The soil moisture sensor measures the amount
+                                of moisture present in the soil and sends
+                                that information to the controller.
+                            </p>
+
+                            <p>
+                                Most of the project's operation is handled
+                                by the code embedded in
+                                <strong>Sajilo Bot</strong>,
+                                a custom board based on the functionality of
+                                an Arduino Uno.
+                            </p>
+
+                            <p>
+                                The program reads the sensor's input, processes
+                                the moisture level, and determines how the
+                                system should respond to the detected conditions.
+                            </p>
+
+                            <p>
+                                This allows the project to monitor soil
+                                conditions automatically using both the
+                                sensor hardware and programmed logic.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Built with curiosity, code &amp; electronics.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

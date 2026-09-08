@@ -1,0 +1,430 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #667085;
+    --border: #e2e5e9;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --video-bg: #111111;
+
+    background: var(--bg);
+    color: var(--text);
+
+    min-height: 100vh;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    --bg: #0b0f14;
+    --card: #121821;
+    --text: #f5f7fa;
+    --muted: #9aa6b2;
+    --border: #26313d;
+    --accent: #60a5fa;
+    --accent-hover: #93c5fd;
+    --video-bg: #050505;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 7%;
+
+    border-bottom: 1px solid var(--border);
+
+    background: var(--card);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--text);
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg);
+    background: var(--bg);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 100px 7% 70px;
+}
+
+.eyebrow {
+    color: var(--accent);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero-text {
+    max-width: 650px;
+
+    color: var(--muted);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects {
+    width: 86%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+    padding-bottom: 100px;
+}
+
+
+/* Third card */
+
+.project-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: 585px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--accent);
+}
+
+
+/* =========================
+   NORMAL VIDEOS
+   LANDSCAPE 16:9
+========================= */
+
+.video-container {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: var(--video-bg);
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: var(--video-bg);
+}
+
+
+/* =========================
+   LASER VIDEO
+   PORTRAIT 9:16
+========================= */
+
+.laser-video {
+    aspect-ratio: 9 / 16;
+}
+
+.laser-video video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+    padding: 28px;
+}
+
+.project-number {
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.project-content h2 {
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.project-description {
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TECH STACK
+========================= */
+
+.tech-stack {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.tech-stack span {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+details {
+    border-top: 1px solid var(--border);
+
+    padding-top: 18px;
+}
+
+summary {
+    cursor: pointer;
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+    user-select: none;
+}
+
+.explanation {
+    padding-top: 18px;
+
+    color: var(--muted);
+
+    line-height: 1.75;
+}
+
+.explanation p {
+    margin-bottom: 15px;
+}
+
+.explanation strong {
+    color: var(--text);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+    .project-card:last-child {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    /*
+       Keep laser portrait on mobile
+    */
+
+    .laser-video {
+        aspect-ratio: 9 / 16;
+    }
+
+    /*
+       Keep other videos landscape
+    */
+
+    .video-container:not(.laser-video) {
+        aspect-ratio: 16 / 9;
+    }
+}
